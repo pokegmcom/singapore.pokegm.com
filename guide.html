@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Guide - PokeHunt Official Website</title>
+    <meta name="description" content="Complete game guide for PokeHunt, including beginner's tips, advanced strategies, battle tactics, and monster training techniques to help you become a master trainer.">
+    <meta name="keywords" content="PokeHunt guide, game guide, beginner tips, advanced strategies, battle tactics, monster training, PokeHunt official website">
+    <meta name="author" content="Pokegm">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Game Guide - PokeHunt">
+    <meta property="og:description" content="Complete game guide for PokeHunt, including beginner's tips, advanced strategies, battle tactics, and monster training techniques to help you become a master trainer.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://www.pokegm.com/guide.html">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+            .bg-gradient { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)); }
+            .card-hover { transition: all 0.3s ease; }
+            .card-hover:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.2); }
+            .btn-hover { transition: all 0.3s ease; }
+            .btn-hover:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+            .nav-blur { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+        }
+    </style>
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dark/80 nav-blur">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="logo.png" alt="PokeHunt Logo" class="h-12 w-auto">
+                    <h1 class="text-2xl font-bold text-white">PokeHunt</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-accent transition-colors">Home</a>
+                    <a href="features.html" class="text-white hover:text-accent transition-colors">Features</a>
+                    <a href="guide.html" class="text-accent font-medium">Game Guide</a>
+                    <a href="codes.html" class="text-white hover:text-accent transition-colors">Gift Codes</a>
+                    <a href="articles.html" class="text-white hover:text-accent transition-colors">News</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary hover:bg-primary/90 text-white py-2 px-6 rounded-lg btn-hover font-medium">Download Now</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <button onclick="toggleLanguageDropdown()" class="text-white flex items-center space-x-1">
+                            <span>English</span>
+                            <span class="fa fa-chevron-down text-xs"></span>
+                        </button>
+                        <div id="languageDropdown" class="hidden absolute right-0 mt-2 bg-dark border border-gray-700 rounded-lg shadow-lg w-48">
+                            <a href="https://game.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">简体中文</a>
+                            <a href="https://taiwan.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">繁體中文(台灣)</a>
+                            <a href="https://hongkong.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">繁體中文(香港)</a>
+                            <a href="https://macau.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">繁體中文(澳門)</a>
+                            <a href="https://korea.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">한국어</a>
+                            <a href="https://singapore.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800 bg-primary/20">English</a>
+                            <a href="https://malaysia.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">Malay</a>
+                            <a href="https://vietnam.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">Tiếng Việt</a>
+                        </div>
+                    </div>
+                    <button class="md:hidden text-white" onclick="toggleMobileMenu()">
+                        <span class="fa fa-bars text-xl"></span>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-white hover:text-accent">Home</a>
+                <a href="features.html" class="block py-2 text-white hover:text-accent">Features</a>
+                <a href="guide.html" class="block py-2 text-accent font-medium">Game Guide</a>
+                <a href="codes.html" class="block py-2 text-white hover:text-accent">Gift Codes</a>
+                <a href="articles.html" class="block py-2 text-white hover:text-accent">News</a>
+                <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="block mt-4 py-3 bg-primary hover:bg-primary/90 text-white text-center rounded-lg btn-hover font-medium">Download Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('3.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-[clamp(2rem,6vw,3.5rem)] font-bold text-white text-shadow mb-4">Game Guide</h1>
+            <p class="text-[clamp(1rem,3vw,1.25rem)] text-white text-shadow max-w-2xl mx-auto">Master the game with our comprehensive guide for trainers of all levels</p>
+        </div>
+    </section>
+
+    <!-- Beginner's Guide Section -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-center mb-12">Beginner's Guide</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="text-primary text-4xl mb-4 text-center">
+                        <span class="fa fa-download"></span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">1. Getting Started</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Download and install PokeHunt on your device</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Create your trainer profile and customize your character</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Choose your first starter monster from the available options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Complete the tutorial to learn the basics of the game</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="text-primary text-4xl mb-4 text-center">
+                        <span class="fa fa-search"></span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">2. Exploring the World</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Navigate through different regions using the map</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Explore grassy areas to encounter wild monsters</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Visit towns and cities to purchase items and heal your monsters</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Talk to NPCs to receive quests and information</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="text-primary text-4xl mb-4 text-center">
+                        <span class="fa fa-capture"></span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">3. Capturing Monsters</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Weaken wild monsters before attempting to capture them</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Use different types of balls for better capture rates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Pay attention to the monster's HP and status conditions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-check-circle text-secondary mt-1 mr-3"></span>
+                            <span>Build a diverse team with different types of monsters</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Strategies Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-center mb-12">Advanced Strategies</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Battle Tactics</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-3">Type Advantages</h4>
+                            <p class="text-gray-600 mb-4">Each monster type has strengths and weaknesses against other types. Understanding these relationships is crucial for winning battles.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <span class="fa fa-arrow-right text-secondary mt-1 mr-3"></span>
+                                    <span>Water is strong against Fire, weak against Grass</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="fa fa-arrow-right text-secondary mt-1 mr-3"></span>
+                                    <span>Fire is strong against Grass, weak against Water</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="fa fa-arrow-right text-secondary mt-1 mr-3"></span>
+                                    <span>Grass is strong against Water, weak against Fire</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-3">Skill Combinations</h4>
+                            <p class="text-gray-600">Combine different skills to create powerful combos. Some skills can set up conditions that other skills can exploit for maximum damage.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-3">Team Composition</h4>
+                            <p class="text-gray-600">Build a balanced team with different types to cover each other's weaknesses. Include a mix of attackers, defenders, and support monsters.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Monster Training</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-3">Leveling Up</h4>
+                            <p class="text-gray-600 mb-4">Battle wild monsters and trainers to gain experience points. Use rare candies for quick level boosts.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <span class="fa fa-arrow-right text-secondary mt-1 mr-3"></span>
+                                    <span>Focus on training one monster at a time</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="fa fa-arrow-right text-secondary mt-1 mr-3"></span>
+                                    <span>Use experience share to distribute EXP to your whole team</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-3">Evolution</h4>
+                            <p class="text-gray-600">Most monsters evolve at specific levels or under certain conditions. Evolution usually increases a monster's stats and may change its type.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-3">Stats and IVs</h4>
+                            <p class="text-gray-600">Each monster has individual values (IVs) that determine its potential. Use stat-boosting items to maximize your monster's capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gym Challenge Guide Section -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-center mb-12">Gym Challenge Guide</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-bold">Rock Gym</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Specializes in Rock-type monsters. Weak to Water, Grass, Steel, and Ground types.</p>
+                        <h4 class="font-semibold mb-2">Recommended Types:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Water</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Grass</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Steel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="bg-red-500 text-white p-4">
+                        <h3 class="text-xl font-bold">Fire Gym</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Specializes in Fire-type monsters. Weak to Water, Ground, and Rock types.</p>
+                        <h4 class="font-semibold mb-2">Recommended Types:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Water</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Ground</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Rock</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="bg-blue-500 text-white p-4">
+                        <h3 class="text-xl font-bold">Water Gym</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Specializes in Water-type monsters. Weak to Electric and Grass types.</p>
+                        <h4 class="font-semibold mb-2">Recommended Types:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Electric</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Grass</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="bg-green-500 text-white p-4">
+                        <h3 class="text-xl font-bold">Grass Gym</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Specializes in Grass-type monsters. Weak to Fire, Ice, Poison, Flying, and Bug types.</p>
+                        <h4 class="font-semibold mb-2">Recommended Types:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Fire</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Ice</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Flying</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips and Tricks Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-center mb-12">Tips and Tricks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">General Tips</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="fa fa-lightbulb-o text-accent text-xl mt-1 mr-3"></span>
+                            <div>
+                                <h4 class="font-semibold">Save Regularly</h4>
+                                <p class="text-gray-600">Save your game often to avoid losing progress, especially before challenging gym leaders or rare monsters.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-lightbulb-o text-accent text-xl mt-1 mr-3"></span>
+                            <div>
+                                <h4 class="font-semibold">Use Items Wisely</h4>
+                                <p class="text-gray-600">Stock up on healing items and status remedies. Use them strategically during battles.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-lightbulb-o text-accent text-xl mt-1 mr-3"></span>
+                            <div>
+                                <h4 class="font-semibold">Explore Everywhere</h4>
+                                <p class="text-gray-600">Don't just follow the main path. Explore every corner to find hidden items and rare monsters.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Advanced Tips</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="fa fa-lightbulb-o text-accent text-xl mt-1 mr-3"></span>
+                            <div>
+                                <h4 class="font-semibold">Breeding</h4>
+                                <p class="text-gray-600">Breed monsters to obtain offspring with better stats and inherited moves.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-lightbulb-o text-accent text-xl mt-1 mr-3"></span>
+                            <div>
+                                <h4 class="font-semibold">EV Training</h4>
+                                <p class="text-gray-600">Focus on training specific stats by battling certain types of monsters to maximize your monster's potential.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="fa fa-lightbulb-o text-accent text-xl mt-1 mr-3"></span>
+                            <div>
+                                <h4 class="font-semibold">Team Synergy</h4>
+                                <p class="text-gray-600">Build a team with monsters that complement each other's strengths and cover each other's weaknesses.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="py-20 bg-dark text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold mb-6">Ready to Apply These Strategies?</h2>
+            <p class="text-lg mb-10 max-w-2xl mx-auto">Download PokeHunt now and start your journey to become a master trainer!</p>
+            <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-primary hover:bg-primary/90 text-white py-4 px-10 rounded-lg btn-hover font-medium text-lg">
+                <span class="fa fa-download mr-3"></span> Download Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PokeHunt</h3>
+                    <p class="text-gray-400">A classic monster collection and training game with retro pixel art style!</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="guide.html" class="text-gray-400 hover:text-white transition-colors">Game Guide</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white transition-colors">Gift Codes</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition-colors">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Community</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                            <span class="fa fa-discord mr-2"></span> Discord
+                        </a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                            <span class="fa fa-weixin mr-2"></span> 公众号: 小茂爱手游
+                        </a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                            <span class="fa fa-qq mr-2"></span> QQ群: 1054734634
+                        </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400 mb-4">Email: game@pokegm.com</p>
+                    <div class="flex space-x-4">
+                        <a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white text-xl transition-colors">
+                            <span class="fa fa-discord"></span>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                            <span class="fa fa-weixin"></span>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                            <span class="fa fa-qq"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 PokeHunt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Language dropdown toggle
+        function toggleLanguageDropdown() {
+            const dropdown = document.getElementById('languageDropdown');
+            dropdown.classList.toggle('hidden');
+        }
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('languageDropdown');
+            const button = document.querySelector('[onclick="toggleLanguageDropdown()"]');
+            if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeHunt Official Launch Announcement - PokeHunt Official Website</title>
+    <meta name="description" content="PokeHunt will officially launch on January 20, 2026 at 10:00 AM! A classic monster collection and training game with retro pixel art style. Discover the exciting features and gift codes for the launch.">
+    <meta name="keywords" content="PokeHunt launch, game release, official announcement, gift codes, monster collection, training game">
+    <meta name="author" content="Pokegm">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="PokeHunt Official Launch Announcement">
+    <meta property="og:description" content="PokeHunt will officially launch on January 20, 2026 at 10:00 AM! A classic monster collection and training game with retro pixel art style. Discover the exciting features and gift codes for the launch.">
+    <meta property="og:image" content="../1.jpg">
+    <meta property="og:url" content="https://www.pokegm.com/articles/article1.html">
+    <meta property="og:type" content="article">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+            .bg-gradient { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)); }
+            .card-hover { transition: all 0.3s ease; }
+            .card-hover:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.2); }
+            .btn-hover { transition: all 0.3s ease; }
+            .btn-hover:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+            .nav-blur { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+        }
+    </style>
+    <link rel="icon" href="../logo.png" type="image/png">
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dark/80 nav-blur">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="../logo.png" alt="PokeHunt Logo" class="h-12 w-auto">
+                    <h1 class="text-2xl font-bold text-white">PokeHunt</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-white hover:text-accent transition-colors">Home</a>
+                    <a href="../features.html" class="text-white hover:text-accent transition-colors">Features</a>
+                    <a href="../guide.html" class="text-white hover:text-accent transition-colors">Game Guide</a>
+                    <a href="../codes.html" class="text-white hover:text-accent transition-colors">Gift Codes</a>
+                    <a href="../articles.html" class="text-accent font-medium">News</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary hover:bg-primary/90 text-white py-2 px-6 rounded-lg btn-hover font-medium">Download Now</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <button onclick="toggleLanguageDropdown()" class="text-white flex items-center space-x-1">
+                            <span>English</span>
+                            <span class="fa fa-chevron-down text-xs"></span>
+                        </button>
+                        <div id="languageDropdown" class="hidden absolute right-0 mt-2 bg-dark border border-gray-700 rounded-lg shadow-lg w-48">
+                            <a href="https://game.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">简体中文</a>
+                            <a href="https://taiwan.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">繁體中文(台灣)</a>
+                            <a href="https://hongkong.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">繁體中文(香港)</a>
+                            <a href="https://macau.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">繁體中文(澳門)</a>
+                            <a href="https://korea.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">한국어</a>
+                            <a href="https://singapore.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800 bg-primary/20">English</a>
+                            <a href="https://malaysia.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">Malay</a>
+                            <a href="https://vietnam.pokegm.com" class="block px-4 py-2 text-white hover:bg-gray-800">Tiếng Việt</a>
+                        </div>
+                    </div>
+                    <button class="md:hidden text-white" onclick="toggleMobileMenu()">
+                        <span class="fa fa-bars text-xl"></span>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <a href="../index.html" class="block py-2 text-white hover:text-accent">Home</a>
+                <a href="../features.html" class="block py-2 text-white hover:text-accent">Features</a>
+                <a href="../guide.html" class="block py-2 text-white hover:text-accent">Game Guide</a>
+                <a href="../codes.html" class="block py-2 text-white hover:text-accent">Gift Codes</a>
+                <a href="../articles.html" class="block py-2 text-accent font-medium">News</a>
+                <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="block mt-4 py-3 bg-primary hover:bg-primary/90 text-white text-center rounded-lg btn-hover font-medium">Download Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <section class="relative pt-32 pb-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium mr-3">Announcement</span>
+                    <span class="text-gray-500 text-sm">January 15, 2026</span>
+                </div>
+                <h1 class="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-6">PokeHunt Official Launch Announcement</h1>
+                <div class="mb-8">
+                    <img src="../1.jpg" alt="PokeHunt Launch" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="py-12 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-xl font-semibold mb-6">Dear Trainers,</p>
+                    
+                    <p class="mb-6">We are excited to announce that <strong>PokeHunt</strong> will officially launch on <strong>January 20, 2026 at 10:00 AM</strong>! A classic monster collection and training game that meticulously recreates the original appearances of hundreds of monsters and the core of adventure!</p>
+                    
+                    <h2 class="text-2xl font-bold mb-4">What You Can Experience</h2>
+                    
+                    <div class="bg-white rounded-2xl p-6 shadow-lg mb-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="fa fa-star text-accent text-xl mt-1 mr-3"></span>
+                                <div>
+                                    <h3 class="font-bold">Original Content</h3>
+                                    <p>100% recreation of classic monster appearances, gathering companions from all sides!</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="fa fa-star text-accent text-xl mt-1 mr-3"></span>
+                                <div>
+                                    <h3 class="font-bold">Monster Forms</h3>
+                                    <p>MEGA Evolution, Gigantamax, unlocking all forms of monsters!</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="fa fa-star text-accent text-xl mt-1 mr-3"></span>
+                                <div>
+                                    <h3 class="font-bold">Treasure Boost</h3>
+                                    <p>Bond accessories activating monsters' hidden power!</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="fa fa-star text-accent text-xl mt-1 mr-3"></span>
+                                <div>
+                                    <h3 class="font-bold">Exploration Adventure</h3>
+                                    <p>Open-world map levels, discovering hidden secret areas!</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="fa fa-star text-accent text-xl mt-1 mr-3"></span>
+                                <div>
+                                    <h3 class="font-bold">Competitive Duel</h3>
+                                    <p>Single-player duels to test your strength, competing for the top rankings!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold mb-4">Launch Gift Codes</h2>
+                    
+                    <p class="mb-4">To celebrate the official launch of PokeHunt, we're giving away exclusive gift codes for all trainers!</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="bg-white rounded-xl p-4 shadow-md">
+                            <h3 class="font-bold mb-2">Gift Code 1</h3>
+                            <div class="bg-gray-100 rounded-lg p-3 mb-2">
+                                <code class="font-mono">ay6btcrx</code>
+                            </div>
+                            <p class="text-sm text-gray-600">Rewards: Crystals*50, Gold*10,000</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-md">
+                            <h3 class="font-bold mb-2">Gift Code 2</h3>
+                            <div class="bg-gray-100 rounded-lg p-3 mb-2">
+                                <code class="font-mono">d7lsw8bu</code>
+                            </div>
+                            <p class="text-sm text-gray-600">Rewards: Rare Candy (Medium)*5, Gold*10,000</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-md">
+                            <h3 class="font-bold mb-2">Gift Code 3</h3>
+                            <div class="bg-gray-100 rounded-lg p-3 mb-2">
+                                <code class="font-mono">1frydl8n</code>
+                            </div>
+                            <p class="text-sm text-gray-600">Rewards: Stamina*50, Fatigue*100</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-md">
+                            <h3 class="font-bold mb-2">Gift Code 4</h3>
+                            <div class="bg-gray-100 rounded-lg p-3 mb-2">
+                                <code class="font-mono">42binn3h</code>
+                            </div>
+                            <p class="text-sm text-gray-600">Rewards: Common Card Random Package*10, Rare Candy (Medium)*5</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-md md:col-span-2">
+                            <h3 class="font-bold mb-2">Gift Code 5</h3>
+                            <div class="bg-gray-100 rounded-lg p-3 mb-2">
+                                <code class="font-mono">y67gaamk</code>
+                            </div>
+                            <p class="text-sm text-gray-600">Rewards: Crystals*100, Gold*10,000</p>
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold mb-4">How to Redeem</h2>
+                    
+                    <ol class="list-decimal pl-5 space-y-2 mb-8">
+                        <li>Open PokeHunt after launch</li>
+                        <li>Tap on the menu button in the top-right corner</li>
+                        <li>Select "Settings" from the dropdown menu</li>
+                        <li>Choose "Redeem Code" option</li>
+                        <li>Enter the gift code and tap "Redeem"</li>
+                        <li>Check your in-game mailbox to collect rewards</li>
+                    </ol>
+                    
+                    <p class="mb-6">We can't wait for you to join us on this exciting adventure! Prepare yourself to become the best monster trainer in the PokeHunt world!</p>
+                    
+                    <p class="font-semibold">The PokeHunt Team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-center mb-12">Related Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="../2.jpg" alt="New Monsters Added" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-3">January 10, 2026</div>
+                        <h3 class="text-xl font-bold mb-3">50 New Monsters Added to PokeHunt</h3>
+                        <p class="text-gray-600 mb-4">We've added 50 new monsters to the game! Discover them in the open world and add them to your collection.</p>
+                        <a href="article2.html" class="text-primary hover:text-primary/80 font-medium flex items-center">
+                            Read More <span class="fa fa-arrow-right ml-2"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="../3.jpg" alt="Gift Codes Released" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-3">January 5, 2026</div>
+                        <h3 class="text-xl font-bold mb-3">New Gift Codes Released for Players</h3>
+                        <p class="text-gray-600 mb-4">New gift codes have been released! Redeem them for exclusive rewards including crystals, gold, rare candies, and more.</p>
+                        <a href="article3.html" class="text-primary hover:text-primary/80 font-medium flex items-center">
+                            Read More <span class="fa fa-arrow-right ml-2"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="../4.jpg" alt="Weekend Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-3">January 3, 2026</div>
+                        <h3 class="text-xl font-bold mb-3">Weekend Double XP Event Announced</h3>
+                        <p class="text-gray-600 mb-4">Join us this weekend for a double XP event! Earn twice the experience points from battles and quests.</p>
+                        <a href="#" class="text-primary hover:text-primary/80 font-medium flex items-center">
+                            Read More <span class="fa fa-arrow-right ml-2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="py-20 bg-dark text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold mb-6">Ready to Start Your Adventure?</h2>
+            <p class="text-lg mb-10 max-w-2xl mx-auto">Download PokeHunt now and be ready for the official launch on January 20, 2026!</p>
+            <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-primary hover:bg-primary/90 text-white py-4 px-10 rounded-lg btn-hover font-medium text-lg">
+                <span class="fa fa-download mr-3"></span> Download Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PokeHunt</h3>
+                    <p class="text-gray-400">A classic monster collection and training game with retro pixel art style!</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="../features.html" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="../guide.html" class="text-gray-400 hover:text-white transition-colors">Game Guide</a></li>
+                        <li><a href="../codes.html" class="text-gray-400 hover:text-white transition-colors">Gift Codes</a></li>
+                        <li><a href="../articles.html" class="text-gray-400 hover:text-white transition-colors">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Community</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                            <span class="fa fa-discord mr-2"></span> Discord
+                        </a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                            <span class="fa fa-weixin mr-2"></span> 公众号: 小茂爱手游
+                        </a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                            <span class="fa fa-qq mr-2"></span> QQ群: 1054734634
+                        </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400 mb-4">Email: game@pokegm.com</p>
+                    <div class="flex space-x-4">
+                        <a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white text-xl transition-colors">
+                            <span class="fa fa-discord"></span>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                            <span class="fa fa-weixin"></span>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                            <span class="fa fa-qq"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 PokeHunt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Language dropdown toggle
+        function toggleLanguageDropdown() {
+            const dropdown = document.getElementById('languageDropdown');
+            dropdown.classList.toggle('hidden');
+        }
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('languageDropdown');
+            const button = document.querySelector('[onclick="toggleLanguageDropdown()"]');
+            if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
